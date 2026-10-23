@@ -1,0 +1,11 @@
+build:
+  version: "2.0"
+
+accounts:
+  message: "Welcome to DC Bank accounts related QA APIs"
+  contactDetails:
+    name: "Smitha Ray - QA Lead"
+    email: "smitha@dcbank.con"
+  onCallSupport:
+    -(91)19921992-1991,
+    -(91)19921991-1991

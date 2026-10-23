@@ -1,0 +1,38 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: accounts
+  datasource:
+    url: "jdbc:h2:mem:testdb"
+    driverClassName: "org.h2.Driver"
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: "org.hibernate.dialect.H2Dialect"
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  profiles:
+    active:
+      - "prod"
+
+logging:
+  pattern:
+    console: ${CONSOLE_LOG_PATTERN:%green(%d{HH:mm:ss.SSS}) %blue(%-5level) %red([%thread]) %yellow(%logger{15}) - %cyan(%msg%n)}
+
+build:
+  version: "3.0"
+
+accounts:
+  message: "Welcome to DC Bank accounts related local APIs"
+  contactDetails:
+    name: "John Doe - Developer"
+    email: "john@dcbank.con"
+  onCallSupport:
+    -(91)1991991-1991,
+    -(91)1991992-1991
