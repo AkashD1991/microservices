@@ -1,0 +1,11 @@
+build:
+  version: "3.0"
+
+cards:
+  message: "Welcome to DC Bank cards related local APIs"
+  contactDetails:
+    name: "John sinha- Developer"
+    email: "johns@dcbank.con"
+  onCallSupport:
+    -(91)19999991-1991,
+    -(91)19999991-1992

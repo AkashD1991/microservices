@@ -1,0 +1,11 @@
+build:
+  version: "2.0"
+
+cards:
+  message: "Welcome to DC Bank cards related prod APIs"
+  contactDetails:
+    name: "Cherryl Pankaj - QA Lead"
+    email: "cherryl@dcbank.com"
+  onCallSupport:
+    -(91)19999993-1991,
+    -(91)19999993-1992
