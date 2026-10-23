@@ -1,0 +1,173 @@
+[INFO] Scanning for projects...
+[INFO] Loaded 24196 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] 
+[INFO] ------------------------< com.dcbank:accounts >-------------------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Loaded 74 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ accounts ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ accounts ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- jib:3.5.2:dockerBuild (default-cli) @ accounts ---
+[WARNING] 'mainClass' configured in 'maven-jar-plugin' is not a valid Java class: ${start-class}
+[INFO] 
+[INFO] Containerizing application to Docker daemon as darekar27/accounts:s6...
+[WARNING] Base image 'eclipse-temurin:25-jre' does not use a specific image digest - build may not be reproducible
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/Users/akashdarekar/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Getting manifest for base image eclipse-temurin:25-jre...
+[INFO] Building dependencies layer...
+[INFO] Building resources layer...
+[INFO] Building classes layer...
+[INFO] Building jvm arg files layer...
+[INFO] The base image requires auth. Trying again for eclipse-temurin:25-jre...
+[WARNING] The credential helper (docker-credential-desktop) has nothing for server URL: registry-1.docker.io
+
+Got output:
+
+credentials not found in native keychain
+
+[WARNING] The credential helper (docker-credential-desktop) has nothing for server URL: registry.hub.docker.com
+
+Got output:
+
+credentials not found in native keychain
+
+[INFO] Using credentials from Docker config (/Users/akashdarekar/.docker/config.json) for eclipse-temurin:25-jre
+[INFO] Using base image with digest: sha256:dbb43d81099eec91e0800226ed2296d03146ee7857165b95112372ad0d67e87f
+[INFO] 
+[INFO] Container entrypoint set to [java, -cp, @/app/jib-classpath-file, com.dcbank.accounts.AccountsApplication]
+[INFO] Loading to Docker daemon...
+[INFO] 
+[INFO] Built image to Docker daemon as darekar27/accounts:s6
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  9.329 s
+[INFO] Finished at: 2026-10-22T20:55:42+05:30
+[INFO] ------------------------------------------------------------------------
+The push refers to repository [docker.io/darekar27/accounts]
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Waiting
+435bf5c20694: Mounted from darekar27/cards
+d9d511d19a19: Waiting
+d9d511d19a19: Waiting
+d9d511d19a19: Waiting
+d9d511d19a19: Waiting
+d9d511d19a19: Waiting
+d9d511d19a19: Waiting
+d9d511d19a19: Waiting
+d9d511d19a19: Mounted from darekar27/cards
+9abc7098f0ed: Waiting
+9abc7098f0ed: Waiting
+9abc7098f0ed: Waiting
+9abc7098f0ed: Waiting
+9abc7098f0ed: Waiting
+9abc7098f0ed: Waiting
+9abc7098f0ed: Mounted from darekar27/cards
+5787b8fa2914: Waiting
+5787b8fa2914: Waiting
+5787b8fa2914: Waiting
+5787b8fa2914: Waiting
+5787b8fa2914: Waiting
+5787b8fa2914: Waiting
+5787b8fa2914: Waiting
+4f4fb700ef54: Waiting
+5787b8fa2914: Mounted from darekar27/cards
+4f4fb700ef54: Waiting
+4f4fb700ef54: Waiting
+4f4fb700ef54: Waiting
+4f4fb700ef54: Layer already exists
+2e60e4e3b521: Waiting
+2e60e4e3b521: Waiting
+2e60e4e3b521: Waiting
+2e60e4e3b521: Layer already exists
+439bac80922f: Waiting
+439bac80922f: Waiting
+439bac80922f: Waiting
+439bac80922f: Waiting
+439bac80922f: Waiting
+439bac80922f: Waiting
+439bac80922f: Waiting
+f9015ed41b6f: Waiting
+f9015ed41b6f: Waiting
+f9015ed41b6f: Waiting
+f9015ed41b6f: Waiting
+f9015ed41b6f: Waiting
+f9015ed41b6f: Waiting
+f9015ed41b6f: Waiting
+f9015ed41b6f: Waiting
+f9015ed41b6f: Waiting
+f9015ed41b6f: Waiting
+f9015ed41b6f: Waiting
+f9015ed41b6f: Pushed
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+fb034b4ef048: Waiting
+c8c489c82f97: Waiting
+c8c489c82f97: Waiting
+c8c489c82f97: Waiting
+c8c489c82f97: Waiting
+c8c489c82f97: Waiting
+fb034b4ef048: Pushed
+c8c489c82f97: Waiting
+c8c489c82f97: Waiting
+c8c489c82f97: Waiting
+c8c489c82f97: Waiting
+c8c489c82f97: Waiting
+c8c489c82f97: Waiting
+c8c489c82f97: Pushed
+439bac80922f: Pushed
+s6: digest: sha256:8b835b2ecb9921432d80b7d07ac54e992a68fa18a51752eb8466e4786ed9fa40 size: 1888

@@ -5,7 +5,7 @@ accounts:
   message: "Welcome to DC Bank accounts related local APIs"
   contactDetails:
     name: "John Doe - Developer"
-    email: "john@dcbank.con"
+    email: "john@dcbank.com"
   onCallSupport:
     -(91)1991991-1991,
     -(91)1991992-1991

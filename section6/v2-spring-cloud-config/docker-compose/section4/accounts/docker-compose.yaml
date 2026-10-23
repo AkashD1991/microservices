@@ -1,0 +1,42 @@
+name: dcbank-microservices
+services:
+  accounts:
+    image: "darekar27/accounts:s4"
+    container_name: accounts-ms
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - dcbank
+  loans:
+    image: "darekar27/loans:s4"
+    container_name: loans-ms
+    restart: unless-stopped
+    ports:
+      - "8090:8090"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - dcbank
+  cards:
+    image: "darekar27/cards:s4"
+    container_name: cards-ms
+    restart: unless-stopped
+    ports:
+      - "9000:9000"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - dcbank
+
+networks:
+  dcbank:
+    driver: bridge
